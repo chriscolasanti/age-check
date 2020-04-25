@@ -13,16 +13,6 @@ and open the template in the editor.
         <script src="dist/jquery.agecheck-min.js"></script>
         <script>
             $(document).ready(function(){ 
-                //THIS CODE IS ONLY NEEDED FOR DEMO:
-                var minAge = $('select').val();
-                $('select').on('change', function(){
-                   minAge = $(this).val(); 
-                });
-                $('button').on('click', function(){
-                    sessionStorage.clear();
-                    $.ageCheck({minAge: minAge});
-                });
-                //END DEMO CODE.
                 //THIS IS ALL YOU NEED FOR PLUGIN:
                 $.ageCheck({minAge: minAge});        
             });        
@@ -101,7 +91,7 @@ and open the template in the editor.
     <body>
         <div class="demo">
         <h3>
-            <a style="text-decoration:none; color:#666;" href="http://michaelsoriano.com/jquery-plugin-check-user-age/">AgeCheck.js <span style="color:red;">Demo</span><br>jQuery Plugin for Checking user age</a></h3>
+            <a style="text-decoration:none; color:#666;" href="https://github.com/chriscolasanti/age-check">AgeCheck.js <span style="color:red;">Demo</span><br>jQuery Plugin for Checking user age</a></h3>
             <div style="max-width:500px; padding:0; margin:0 auto;">
                 <p>
                     AgeCheck.js will automatically prompt to check your age. It will redirect back to this page on success. You can change the minimum age by selecting from the select options, and 
